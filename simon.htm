@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simon Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>SIMON</h1>
+<p class="subtitle">MEMORY SEQUENCE CHALLENGE</p>
+
+<div class="diff-row">
+  <button class="diff-btn active" data-diff="easy">EASY</button>
+  <button class="diff-btn" data-diff="medium">MEDIUM</button>
+  <button class="diff-btn" data-diff="hard">HARD</button>
+</div>
+
+<div id="status">PRESS ANY KEY TO START</div>
+
+<div class="stats-row">
+  <div class="stat">
+    <div class="stat-label">LEVEL</div>
+    <div class="stat-value" id="level-display">—</div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">SCORE</div>
+    <div class="stat-value" id="score-display">—</div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">BEST</div>
+    <div class="stat-value" id="best-display">0</div>
+  </div>
+</div>
+
+<div class="board" id="board">
+  <div class="btn red"    id="btn-red"></div>
+  <div class="btn green"  id="btn-green"></div>
+  <div class="btn yellow" id="btn-yellow"></div>
+  <div class="btn blue"   id="btn-blue"></div>
+
+  <div class="board-ring">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="44" stroke="#1a2a3a" stroke-width="10"/>
+      <circle cx="50" cy="50" r="28" fill="#060d1a" stroke="#0d1b2e" stroke-width="2"/>
+      <text x="50" y="55" text-anchor="middle" fill="#2a4060" font-family="Orbitron,sans-serif" font-size="9" letter-spacing="1">SIM</text>
+    </svg>
+  </div>
+
+  <div class="start-overlay" id="start-overlay">
+    <div class="start-text">PRESS ANY KEY<br>TO START</div>
+  </div>
+</div>
+
+<div class="progress-row" id="progress-row"></div>
+
+<div class="leaderboard">
+  <div class="lb-header">
+    <span>HIGH SCORES</span>
+    <button class="lb-clear" id="lb-clear-btn">CLEAR</button>
+  </div>
+  <ul class="lb-list" id="lb-list"></ul>
+</div>
+
+<div class="combo-flash" id="combo-flash"></div>
+
+<script src="game.js"></script>
+</body>
+</html>
