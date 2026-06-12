@@ -9,55 +9,106 @@ build with -html,css,js
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/57055734-c577-4291-8a23-97571d3c8ebe" />
 
-🕹️ How to Play
-Open simon.html in any modern browser
-Press any key (or click the board) to start
-Watch the sequence of colored button flashes
-Repeat the sequence by clicking the buttons in the same order
-Each round adds one more step — see how far you can go!
-✨ Features
-🎵 Sound Effects
-Each button plays a unique musical tone via the Web Audio API
-Wrong answer triggers a buzzer sound
-Level milestone (every 5 levels) plays a 3-note chime
-🎨 Animations
-Buttons glow with a colored halo on press
-Board shakes on game over
-Gold pulse ring expands on each new level
-Level number pops up on screen every round
-⚡ Difficulty Levels
-Mode	Flash Duration	Gap Between Presses
-Easy	500ms	300ms
-Medium	350ms	200ms
-Hard	200ms	120ms
-Difficulty locks during gameplay and resets after game over.
+# 🎮 Simon Says Game
 
-🏆 High Score Leaderboard
-Top 7 scores saved locally via localStorage
-Each entry shows date, difficulty badge, and score
-"NEW HIGH SCORE!" flash animation on beating #1
-Clear scores anytime with the CLEAR button
-📊 Progress Tracker
-Dot indicators below the board show your position in the current sequence in real time
-📁 Project Structure
+An interactive browser-based Simon Says memory game built using HTML, CSS, and JavaScript. Test your memory skills by repeating increasingly longer sequences of colors and sounds. The game features multiple difficulty levels, sound effects, animations, a local leaderboard, and real-time progress tracking.
+
+---
+
+## 🕹️ How to Play
+
+1. Open `simon.html` in any modern web browser.
+2. Press any key (or click the game board) to start.
+3. Watch the sequence of colored button flashes.
+4. Repeat the sequence by clicking the buttons in the same order.
+5. Each round adds one more step to the sequence.
+6. Keep going and see how far you can reach!
+
+---
+
+## ✨ Features
+
+### 🎵 Sound Effects
+
+* Unique musical tone for each button using the Web Audio API.
+* Buzzer sound on incorrect input.
+* Special 3-note chime every 5 levels.
+
+### 🎨 Animations
+
+* Colored glow effect on button press.
+* Board shake animation on game over.
+* Expanding golden pulse ring for each new level.
+* Animated level indicator for every round.
+
+### ⚡ Difficulty Levels
+
+| Difficulty | Flash Duration | Gap Between Presses |
+| ---------- | -------------- | ------------------- |
+| Easy       | 500ms          | 300ms               |
+| Medium     | 350ms          | 200ms               |
+| Hard       | 200ms          | 120ms               |
+
+> Difficulty selection is locked during gameplay and resets after game over.
+
+### 🏆 High Score Leaderboard
+
+* Top 7 scores stored using Local Storage.
+* Displays score, date, and difficulty level.
+* "NEW HIGH SCORE!" animation when beating the top score.
+* Option to clear all saved scores.
+
+### 📊 Progress Tracker
+
+* Real-time progress indicators below the game board.
+* Helps track your position in the current sequence.
+
+---
+
+## 📁 Project Structure
+
+```text
 simon-game/
 │
-├── simon.html     # Main game file (self-contained)
-├── style.css      # Stylesheet
+├── simon.html     # Main game file
+├── style.css      # Styling and animations
 ├── game.js        # Game logic
-└── README.md      # You're reading this
-🚀 Getting Started
-No install or build step needed.
+└── README.md      # Project documentation
+```
 
-# Clone the repo
-Open your folder in command prompt and paste this url
-git clone https://github.com/afthabBaadshah/SimonSays_Game.git
+---
+
+## 🚀 Getting Started
+
+No installation or build process is required.
+
+### Clone the Repository
+
+Open your project folder in Command Prompt and run:
+
+```bash
+git clone https://github.com/KeerthanaD/SimonSays_Game.git
+```
+
+Then open `simon.html` in your browser and start playing.
+
 ---
 
 ## 🛠️ Built With
 
-- **HTML5** — structure
-- **CSS3** — animations, transitions, custom properties
-- **Vanilla JavaScript** — game logic, Web Audio API, localStorage
-- **Google Fonts** — Orbitron, Share Tech Mono
+* HTML5 — Structure and layout
+* CSS3 — Styling, animations, and transitions
+* Vanilla JavaScript — Game logic and interactivity
+* Web Audio API — Sound effects
+* Local Storage API — High score persistence
+* Google Fonts — Orbitron, Share Tech Mono
+
+---
+
+## 🎯 Objective
+
+Challenge your memory by following the sequence correctly for as many levels as possible. Every new level increases the sequence length, making the game progressively more difficult.
+
+Good luck and have fun! 🎉
+* — Orbitron, Share Tech Mono
 
